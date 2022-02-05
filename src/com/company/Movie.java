@@ -9,6 +9,11 @@ public class Movie extends Event{
         return title;
     }
 
+    @Override
+    public String toString() {
+        return  "Название фильма: " + title + " " + " релиз в: " + " " + "Контент " +age;
+    }
+
     public Movie(String title, int releaseYear, int age) {
         this.title = title;
         this.releaseYear = releaseYear;

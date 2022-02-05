@@ -15,4 +15,9 @@ public class Theatre extends Event{
     public String getTitle() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Название постановки: " + title + " " + " релиз в: " + " " + "Контент " + age;
+    }
 }
