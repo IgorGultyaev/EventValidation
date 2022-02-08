@@ -1,6 +1,6 @@
 package com.company;
 
-public class Theatre extends Event{
+public class Theatre extends Event {
     private String title;
     private int releaseYear;
     private int age;
