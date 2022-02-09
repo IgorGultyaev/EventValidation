@@ -1,6 +1,6 @@
 package com.company;
 
-public class Movie extends Event{
+public class Movie extends Event {
     private String title;
     private int releaseYear;
     private int age;
@@ -10,8 +10,18 @@ public class Movie extends Event{
     }
 
     @Override
+    public int getReleaseYear() {
+        return this.releaseYear;
+    }
+
+    @Override
+    public int getAge() {
+        return this.age;
+    }
+
+    @Override
     public String toString() {
-        return  "Название фильма: " + title + " " + " релиз в: " + " " + "Контент " +age;
+        return "Название фильма: " + title + " " + " релиз в: " + " " + "Контент " + age;
     }
 
     public Movie(String title, int releaseYear, int age) {

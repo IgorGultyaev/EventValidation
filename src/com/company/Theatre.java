@@ -13,7 +13,17 @@ public class Theatre extends Event {
 
     @Override
     public String getTitle() {
-        return null;
+        return this.title;
+    }
+
+    @Override
+    public int getReleaseYear() {
+        return this.releaseYear;
+    }
+
+    @Override
+    public int getAge() {
+        return this.age;
     }
 
     @Override
