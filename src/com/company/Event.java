@@ -22,8 +22,8 @@ public abstract class Event {
             if (event.getAge() > 18 || event.getAge() < 0) {
                 throw new RuntimeException("age limits should be in the range 0 - 18");
             }
-            if (((event.getClass() == Movie.class) && (event.getReleaseYear() < 1985)) ||
-                    ((event.getClass() == Theatre.class) && (event.getReleaseYear() < new Date().getYear() + 1900))) {
+            if (((event.getClass().equals(Movie.class)) && (event.getReleaseYear() < 1895)) ||
+                    ((event.getClass().equals(Theatre.class)) && (event.getReleaseYear() < new Date().getYear() + 1900))) {
                 throw new RuntimeException("incorrect release date");
             }
         }
